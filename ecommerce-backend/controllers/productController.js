@@ -71,8 +71,4 @@ exports.deleteProduct = async (req, res) => {
     res.status(500).json({ message: "Server Error", error: err });
   }
 };
-// If your backend returns 'title' instead of 'name':
-const filteredProducts = products.filter((p) =>
-  p.title.toLowerCase().includes(searchTerm.toLowerCase())
-);
 
